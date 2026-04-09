@@ -1,0 +1,145 @@
+/* BODY */
+body {
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #2d2243, #5f4b8b);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* NAVBAR */
+nav {
+    background: #6b5b95;
+    text-align: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    letter-spacing: 1px;
+}
+
+/* CONTENT BOX */
+.content {
+    background: white;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.content:hover {
+    transform: scale(1.01);
+}
+
+/* HEADINGS */
+h2 {
+    text-align: center;
+    color: #5f4b8b;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #6b5b95;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    text-align: center;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 180px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* BUTTON */
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #219150, #27ae60);
+}
+
+/* FOOTER */
+footer {
+    background: #5f4b8b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ORDER ITEMS */
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-item input {
+    width: 80px;
+    padding: 5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+}
