@@ -53,7 +53,7 @@ function Order(){
     setSelected([]);
   };
 
-  /* 🔴 CLEAR CART */
+  /*  CLEAR CART */
   const clearCart = () => {
     if(window.confirm("Are you sure you want to clear the cart?")){
       setCart([]);
@@ -152,7 +152,7 @@ function Order(){
               ))}
             </ul>
 
-            {/* 🔴 CLEAR BUTTON */}
+            {/*  CLEAR BUTTON */}
             <button 
               onClick={clearCart} 
               style={{ background: "#e74c3c", marginTop: "10px" }}

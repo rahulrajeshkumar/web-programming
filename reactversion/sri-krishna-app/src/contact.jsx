@@ -13,7 +13,7 @@ function Contact(){
 
       {/* CONTACT DETAILS */}
       <section className="content">
-        <h3>📍 Our Details</h3>
+        <h3>Our Details</h3>
 
         <p><strong>Business Name:</strong> Sri Krishna Agencies</p>
         <p><strong>Location:</strong> Perambalur, Tamil Nadu</p>
@@ -23,7 +23,7 @@ function Contact(){
 
       {/* BUSINESS HOURS */}
       <section className="content">
-        <h3>🕒 Business Hours</h3>
+        <h3>Business Hours</h3>
 
         <p>Monday – Saturday: 9:00 AM – 8:00 PM</p>
         <p>Sunday: Closed</p>
@@ -31,7 +31,7 @@ function Contact(){
 
       {/* CONTACT FORM */}
       <section className="content">
-        <h3>📩 Send Us a Message</h3>
+        <h3>Send Us a Message</h3>
 
         <form className="order-form">
 
@@ -67,7 +67,7 @@ function Contact(){
 
       {/* MAP / LOCATION INFO */}
       <section className="content">
-        <h3>📌 Location</h3>
+        <h3>Location</h3>
         <p>
           We are located in Perambalur and serve nearby regions with fast delivery
           and reliable distribution services.
