@@ -40,25 +40,25 @@ function Home(){
           <div className="product-card">
             <h3>Varshini</h3>
             <p>High-quality cleaning solution for daily use.</p>
-            <img src="/images/varshini.webp" alt="Varshini"/>
+            <img src="images/varshini.webp" alt="Varshini"/>
           </div>
 
           <div className="product-card">
             <h3>Vinayaga Dhoop</h3>
             <p>Effective detergent for superior stain removal.</p>
-            <img src="/images/vinayaga.webp" alt="Vinayaga"/>
+            <img src="images/vinayaga.webp" alt="Vinayaga"/>
           </div>
 
           <div className="product-card">
             <h3>Attar</h3>
             <p>Long-lasting fragrance product for retail shops.</p>
-            <img src="/images/attar.webp" alt="Attar"/>
+            <img src="images/attar.webp" alt="Attar"/>
           </div>
 
           <div className="product-card">
             <h3>Javvadhu</h3>
             <p>Powerful fragrance with traditional essence.</p>
-            <img src="/images/javvadhu.webp" alt="Javvadhu"/>
+            <img src="images/javvadhu.webp" alt="Javvadhu"/>
           </div>
 
         </div>

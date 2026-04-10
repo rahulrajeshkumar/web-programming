@@ -26,25 +26,25 @@ function Products(){
           <div className="product-card">
             <h3>Varshini</h3>
             <p>Creates a divine atmosphere with long-lasting fragrance.</p>
-            <img src="/images/varshini.webp" alt="Varshini"/>
+            <img src="images/varshini.webp" alt="Varshini"/>
           </div>
 
           <div className="product-card">
             <h3>Vinayaga Dhoop</h3>
             <p>Perfect for daily pooja rituals and spiritual use.</p>
-            <img src="/images/vinayaga.webp" alt="Vinayaga"/>
+            <img src="images/vinayaga.webp" alt="Vinayaga"/>
           </div>
 
           <div className="product-card">
             <h3>Attar</h3>
             <p>Premium fragrance oil with long-lasting aroma.</p>
-            <img src="/images/attar.webp" alt="Attar"/>
+            <img src="images/attar.webp" alt="Attar"/>
           </div>
 
           <div className="product-card">
             <h3>Javvadhu</h3>
             <p>Traditional fragrance widely used in temples and rituals.</p>
-            <img src="/images/javvadhu.webp" alt="Javvadhu"/>
+            <img src="images/javvadhu.webp" alt="Javvadhu"/>
           </div>
 
         </div>
