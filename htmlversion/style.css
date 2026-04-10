@@ -1,8 +1,15 @@
 /* BODY */
 body {
-    background: linear-gradient(to right, #ece9e6, #ffffff);
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    margin: 0;
+    background-color: white;   /* light grey */
+    color: #2c3e50;              /* dark text */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -44,13 +51,14 @@ nav a:hover {
 
 /* CONTENT BOX */
 .content {
-    background: white;
+    background: #f4f6f9;
     margin: 25px auto;
     padding: 25px;
     border-radius: 10px;
     max-width: 1000px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
+    text-align: left;
 }
 
 .content:hover {
@@ -69,49 +77,85 @@ h3 {
 }
 
 /* PRODUCTS GRID */
-.products {
+.products{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;      /* keep in one row */
+    gap: 15px;
 }
 
-/* PRODUCT CARD */
-.product-card {
+.product-card{
+    width: 23%;             /* 👈 key change (4 cards = ~25%) */
     text-align: center;
-    width: 220px;
-    padding: 15px;
-    border-radius: 10px;
     background: #f9f9f9;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: 0.3s;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+    width: 100%;            /* fit inside card */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .product-card:hover {
     transform: translateY(-5px);
 }
 
-.product-card img {
-    width: 180px;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 8px;
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 20px;
 }
 
-/* BUTTON */
-button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    background: linear-gradient(135deg, #27ae60, #2ecc71);
+.product-list label{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-list input{
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+
+/* BUTTONS */
+button{
+    display: block;
+    margin: 20px 0 0 20px;   /* 👈 move to LEFT */
+    padding: 10px 18px;
+    background: #27ae60;
     color: white;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
 }
 
-button:hover {
-    background: linear-gradient(135deg, #219150, #27ae60);
+button:hover{
+    background: #219150;
+}
+
+/* CART */
+#cartList{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: left;        /* 👈 FIX */
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#cartList li{
+    text-align: left;        /* 👈 ensure text stays left */
+    margin-bottom: 5px;
+}
+
+h3{
+    margin-left: 20px;
+    text-align: left;   /* 👈 move "Cart" heading left */
 }
 
 /* FOOTER */
@@ -121,6 +165,49 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
+}
+
+.order-form input{
+    width: 280px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+
+    background: rgba(255,255,255,0.7);
+
+    /* 👇 IMPORTANT FIXES */
+    color: #2c3e50;              /* dark text → visible */
+    font-weight: 500;
+
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.1),
+                inset -2px -2px 5px rgba(255,255,255,0.7);
+
+    transition: 0.3s;
+}
+
+.order-form input::placeholder{
+    color: #7f8c8d;   /* visible grey */
+}
+
+.order-form input[type="submit"]{
+    background: #6c5ce7;   /* purple button */
+    color: white;          /* 👈 THIS FIXES YOUR ISSUE */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.order-form input:focus{
+    background: #ffffff;   /* becomes solid when typing */
+    color: #2c3e50;
+
+    box-shadow: 
+        0 0 8px rgba(108,92,231,0.3),
+        inset 2px 2px 5px rgba(0,0,0,0.05);
 }
 
 /* ORDER ITEMS */
