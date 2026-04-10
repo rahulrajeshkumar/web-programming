@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import "./style.css";
 
 import Home from "./home";
@@ -8,7 +8,7 @@ import Contact from "./contact";
 
 function App(){
   return(
-    <BrowserRouter>
+    <HashRouter>
 
       <header className="main-header">
         <h1>Sri Krishna Agencies</h1>
@@ -30,7 +30,8 @@ function App(){
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
+    
   );
 }
 
