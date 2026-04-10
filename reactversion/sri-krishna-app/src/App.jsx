@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import "./style.css";
-import App from "./home";
+
 import Home from "./home";
 import Products from "./products";
 import Order from "./order";
@@ -35,4 +35,4 @@ function App(){
   );
 }
 
-export default App;
+export default Home;
